@@ -23,20 +23,8 @@ Then inject it from your controller
     
     myApp.controller('AppCtrl', function AppCtrl($scope, linkedinService)){}
     
-
-Now its time to get connection list within controller by using linkedinService
-
-    linkedinService.getConnections(function(error, result){
-        if(error){
-            console.log('error',error);
-        }else{
-            console.log(result);
-            $scope.connections = result;
-        }
-
-    });
     
-All methods returns two parameter as callback. First one is error object and second one is response of the api.
+All api methods return two parameter as callback. First one is error object and second one is response object of the api.
 If there is no error then the error parameter will be null.
 
 
