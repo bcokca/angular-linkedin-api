@@ -1,4 +1,4 @@
-# Angular LinkedIn
+# Angular LinkedIn API
 
 Angular interface to the LinkedIn API
 
@@ -7,10 +7,12 @@ Angular interface to the LinkedIn API
 This library provides a pure Angular interface to the LinkedIn **Profile**, **Group**, **Company**, **Jobs**, **Search**, **Share**, **Network** and **Invitation** REST APIs.
 
 
+###[DEMO APPLICATION](http://angular-linkedin-api.aws.af.cm/#/login)
+
 ## Installation
 
 
-You can install **angular-linkedin** via bower:
+You can install **angular-linkedin-api** via bower:
 
     $ bower install angular-linkedin-api
     
