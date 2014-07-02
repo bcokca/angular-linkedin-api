@@ -1,0 +1,18 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+				</a> <a class="brand">LinkedIn AngularJS example</a>
+				<div class="nav-collapse collapse" ng-hide="userprofile == null" ng-model="debug">
+					<div class="pull-right">
+						<span class="navbar-text ">
+	              			Logged in as <a ng-href="{{userprofile.publicProfileUrl}}" class="navbar-link">{{userprofile.firstName}} {{userprofile.lastName}}</a>
+	            		</span>
+	            		<button class="btn btn-mini btn-inverse" style="margin-top:0px;" type="button" ng-click="logoutLinkedIn()">Logout</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
