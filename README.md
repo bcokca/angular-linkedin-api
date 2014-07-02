@@ -13,11 +13,36 @@ This library provides a pure Angular interface to the LinkedIn **Profile**, **Gr
 You can install **angular-linkedin** via bower:
 
     $ bower install angular-linkedin-api
+    
+    
+Add linkedinService as dependency
 
+    var myApp = angular.module('myApp', ['linkedinServices']).config
+    
+Then inject it from your controller
+    
+    myApp.controller('AppCtrl', function AppCtrl($scope, linkedinService)){}
+    
 
-## Authentication
+Now its time to get connection list within controller by using linkedinService
+
+    linkedinService.getConnections(function(error, result){
+        if(error){
+            console.log('error',error);
+        }else{
+            console.log(result);
+            $scope.connections = result;
+        }
+
+    });
+    
+All methods returns two parameter as callback. First one is error object and second one is response of the api.
+If there is no error then the error parameter will be null.
+
 
 ## Profile API
+
+
 
 ## Connections API
 

@@ -1,4 +1,4 @@
-angbootApp.controller('AppCtrl', function AppCtrl($scope, $location, $rootScope, $http, linkedinService) {
+myApp.controller('AppCtrl', function AppCtrl($scope, $location, $rootScope, $http, linkedinService) {
 
 
     $scope.connections = [];

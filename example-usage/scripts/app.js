@@ -1,5 +1,5 @@
 // create module for custom directives
-var angbootApp = angular.module('linkedinAngularApp',['ui.bootstrap', 'linkedinServices']).config(
+var myApp = angular.module('linkedinAngularApp',['ui.bootstrap', 'linkedinServices']).config(
 	[ '$routeProvider', '$locationProvider','$httpProvider',
 	function($routeProvider, $locationProvider) {
 		$routeProvider.when('/login', {
