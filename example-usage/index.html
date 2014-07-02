@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="linkedinAngularApp" >
+<head>
+    <meta charset="utf-8">
+    <title>LinkedIn Angular API MODULE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <!--Style files -->
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/css/social-buttons.css">
+    <link rel="stylesheet" href="style/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="style/css/bootstrap-responsive.min.css">
+    <script type="text/javascript" src="lib/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
+    <!-- linkedin-angular module -->
+    <script  type="text/javascript"  src="lib/linkedin-api-module.js"></script>
+
+
+    <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+        //here goes the api key, and the callback function
+        api_key: 756b4ge71z3zlp
+        onLoad: onLinkedInLoad
+        authorize: true
+    </script>
+
+    <!-- script files -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/linkedin.js"></script>
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-controller="AppCtrl" id="appBody">
+	<!-- header -->
+	<ng:include src="'views/header.html'"></ng:include>
+	<!-- body -->
+	<div class="container-semifluid">
+		<div class="row-fluid">
+			<ng:view></ng:view>
+		</div>
+		<hr>
+		<!--foooter-->
+		<footer>
+
+            <p>Sample application for using linkedin-angular api implementation</p>
+
+		</footer>
+	</div>
+</body>
+
+</html>
