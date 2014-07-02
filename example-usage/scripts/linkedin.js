@@ -11,7 +11,7 @@ function onLinkedInLoad() {
 
 //execute on logout event
 function onLinkedInLogout() {
-	location.reload(true);
+    IN.parse();
 }
 
 //execute on login event
@@ -19,7 +19,7 @@ function onLinkedInLogin() {
 	// pass user info to angular
 	angular.element(document.getElementById("appBody")).scope().$apply(
 		function($scope) {
-			$scope.getLinkedInData();
+			$scope.getUserProfile();
 		}
 	);
 
